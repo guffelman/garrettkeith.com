@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/adjacent-overload-signatures */
+import Head from 'next/head'
 import Link from "next/link";
 import { JSX, SVGProps, useEffect } from "react";
 import Card from "../components/card";
@@ -6,6 +7,10 @@ export default function Component() {
   useEffect(activateKonamiCode, []);
   return (
     <div className="flex min-h-screen flex-col font-sans">
+      <Head>
+        <title>GarrettKeith.com</title>
+        <link rel="icon" href="https://cdn.gert.me/favicon.ico" />
+      </Head>
       <header className="flex items-center justify-between bg-gray-900 px-6 py-4 text-white">
         <div className="text-2xl font-bold">Garrett Uffelman</div>
         <div className="text-sm">
@@ -20,7 +25,7 @@ export default function Component() {
             imgSrc="/me.jpg"
           />
         </section>
-        <section className="flex justify-center overflow-x-scroll p-6">
+        <section className="flex sm:justify-center overflow-x-scroll sm:overflow-hidden p-6">
           <div className="flex gap-4">
             <div className="flex w-[200px] transform flex-col items-center rounded-md bg-white p-4 shadow-md transition duration-500 ease-in-out hover:scale-110">
               <CodeIcon className="mb-4 h-12 w-12" />
