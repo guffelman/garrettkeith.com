@@ -77,12 +77,14 @@ const Card: React.FC<CardProps> = ({ name, description, imgSrc }) => {
             <div className="mt-4 flex gap-4">
             <Link
                 className="btn inline-flex items-center justify-center rounded-md bg-black px-6 py-3 text-white text-lg shadow-md sm:px-4 sm:py-2 sm:text-base xs:px-2 xs:py-1 xs:text-sm"
+                data-umami-event="download-resume"
                 href="https://cdn.gert.me/Garrett.Uffelman.Resume.pdf"
             >
                 Download Resume
             </Link>
             <Link
                 className="btn inline-flex items-center justify-center rounded-md bg-blue-500 px-6 py-3 text-white text-lg shadow-md sm:px-4 sm:py-2 sm:text-base xs:px-2 xs:py-1 xs:text-sm"
+                data-umami-event="connect-with-me"
                 href="https://www.linkedin.com/in/guffelman"
             >
                 Connect with me

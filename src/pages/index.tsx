@@ -195,7 +195,7 @@ export default function Component() {
       </main>
       <footer className="flex h-16 items-center justify-center bg-gray-900 px-6 text-white">
         <p className="text-sm">
-          © 2024 Garrett Uffelman. All rights reserved.
+          © 2024-2025 Garrett Uffelman. All rights reserved.
         </p>
       </footer>
     </div>
