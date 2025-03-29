@@ -10,6 +10,7 @@ export default function Component() {
       <Head>
         <title>GarrettKeith.com</title>
         <link rel="icon" href="https://cdn.gert.me/favicon.ico" />
+        <script defer src="https://umami.gert.me/script.js" data-website-id="5ba1b546-432d-4109-a878-c0eb9c142001"></script>
       </Head>
       <header className="flex items-center justify-between bg-gray-900 px-6 py-4 text-white">
         <div className="text-2xl font-bold">Garrett Uffelman</div>
@@ -221,7 +222,7 @@ const activateKonamiCode = () => {
       konamiIndex++;
       if (konamiIndex === konamiCode.length) {
         alert(
-          "That's an odd combo to enter into a website... 🎉 \nSince you found this, you should definitely hire me.",
+          "That's an odd combo to enter into a website... 🎉 \nSince you found this, you should definitely hire me. I think we'd get along great.",
         );
         konamiIndex = 0;
       }
